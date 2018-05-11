@@ -189,6 +189,8 @@
 'Assets/_Complete-Game/Scripts/Player.cs'
 'Assets/_Complete-Game/Scripts/SoundManager.cs'
 'Assets/_Complete-Game/Scripts/Wall.cs'
+'Assets/Scripts/BoardManager.cs'
+'Assets/Scripts/GameManager.cs'
 'Assets/TutorialInfo/Scripts/Readme.cs'
 'Assets/TutorialInfo/Scripts/TutorialInfo.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
