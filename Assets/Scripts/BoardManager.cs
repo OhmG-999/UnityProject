@@ -85,7 +85,7 @@ public class BoardManager : MonoBehaviour {
 		}
 	}
 
-	public void SetupScene(int Level)
+	public void SetupScene(int level)
 	{
 		BoardSetup ();
 		InitialiseList ();
