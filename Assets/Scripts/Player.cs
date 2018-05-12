@@ -80,7 +80,7 @@ public class Player : MovingObject {
 		}
 	}
 
-	protected override void OnCanMove <T> (T component)
+	protected override void OnCantMove <T> (T component)
 	{
 		Wall hitWall = component as Wall;
 		hitWall.DamageWall (wallDamage);
