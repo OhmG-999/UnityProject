@@ -11,6 +11,7 @@ public class Player : MovingObject {
 	public int pointsPerSoda = 20;
 	public float restartLevelDelay = 1f;
 	public Text foodText;
+	public Text scoreText;
 	public AudioClip moveSound1;
 	public AudioClip moveSound2;
 	public AudioClip eatSound1;
@@ -21,6 +22,7 @@ public class Player : MovingObject {
 
 	private Animator animator;
 	public int food;
+	public int score;
 
 
 	// Use this for initialization
@@ -29,8 +31,10 @@ public class Player : MovingObject {
 		animator = GetComponent<Animator> ();
 
 		food = GameManager.instance.playerFoodPoints;
+		score = GameManager.instance.playerScore;
 
 		foodText.text = "Food: " + food;
+		scoreText.text = "+" + score;
 
 		base.Start ();
 	}
@@ -83,6 +87,7 @@ public class Player : MovingObject {
 		if (other.tag == "Exit") 
 		{
 			Invoke ("Restart", restartLevelDelay);
+			scoreText.text = "+" + score;
 			enabled = false;
 		} 
 		else if (other.tag == "Food") 
